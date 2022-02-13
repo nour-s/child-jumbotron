@@ -2,7 +2,9 @@
 <head>
   <script>
     var handleKey = (e) => {
-      console.log(e);
+      e.stopPropagation();
+      e.preventDefault();
+      e.stopImmediatePropagation();
       const ele = document.querySelector('#letter');
       ele.innerHTML = e.key.toUpperCase();
     }
