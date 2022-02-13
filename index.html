@@ -7,6 +7,9 @@
       e.stopImmediatePropagation();
       const ele = document.querySelector('#letter');
       ele.innerHTML = e.key.toUpperCase();
+      
+      var x = document.getElementById("myAudio");
+      x.play();
     }
 
     document.addEventListener('keydown', handleKey);
@@ -15,6 +18,10 @@
 </head>
 <body>
   <h1 id="letter" style="text-align: center;font-family: 'Bowlby One SC', cursive;font-size: 25.5vw;"></h1>
+  <audio id='myAudio' controls>
+  <source src="https://sfxr.me/#11111HqGuskt5U21S64LePvhaQSjpmMpawAwzaXSdJ3PYh1U4ws25g8CghnSVUTxASeJhW5NmNJrKz7eAhQv63haK7HjZuy5jPbHTtvV7YU2XaY7RosJtmPD" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
 </body>
 
 </html>
