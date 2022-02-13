@@ -1,0 +1,18 @@
+<html>
+<head>
+  <scripit>
+    var handleKey = (e) => {
+      console.log(e);
+      const ele = document.querySelector('#letter');
+      ele.innerHTML = e.key.toUpperCase();
+    }
+
+    document.addEventListener('keydown', handleKey);
+    
+  </script>
+</head>
+<body>
+  <h1 id="letter" style="text-align: center;font-family: 'Bowlby One SC', cursive;font-size: 25.5vw;></h1>
+</body>
+
+</html>
